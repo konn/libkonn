@@ -1,0 +1,27 @@
+Name:                libkonn
+Version:             0.2.3
+Synopsis:            Utilities for konn
+License:             BSD3
+License-file:        LICENSE
+Author:              Hiromi ISHII
+Maintainer:          Hiromi ISHII <konn.jinro_at_gmail.com>
+Copyright:           (C) Hiromi ISHII 2010
+Category:            Utility
+Build-type:          Simple
+Cabal-version:       >=1.2
+Library
+  hs-source-dirs:	src
+  Exposed-modules:     Data.ListLike.Comparison, Text.Mecab, Text.JSON.AttoJSON.Bson Data.Configuration
+  Build-depends:       ListLike >=1.0 && <2.0, base >=4.0 && <5, attoparsec >= 0.8 && <0.9
+                     , monad-loops >=0.3 && <0.4, process >= 1.0 && <2, HTTP >= 4000, syb >= 0.1
+                     , utf8-string >=0.3 && <0.4, bytestring >= 0.9 && <1.0, time >= 1.0 && <2, hoauth >= 0.3
+                     , AttoJson >= 0.4 && <1.0, containers >= 0.3 && <0.4
+                     , compact-string-fix >= 0.3 && <0.4, bson >= 0.0 && <0.5
+                     , old-locale == 1.*
+  
+  -- Modules not exported by this package.
+  -- Other-modules:       
+  
+  -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
+  -- Build-tools:         
+  

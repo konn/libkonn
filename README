@@ -1,0 +1,15 @@
+libkonn - missing convenient libraries for konn
+
+This includes followings:
+
+Data.ListLike.Comparison
+  Comparison functions for ListLike
+
+Text.Mecab
+  Wrapper functions for MeCab
+
+Text.JSON.AttoJSON.Bson
+  Bridge interface between AttoJSON and BSON
+
+Data.Configuration
+  Dynamic data-type for saving & loading configuration.
