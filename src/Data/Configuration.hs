@@ -14,7 +14,7 @@ import Network.HTTP
 deriving instance Typeable1 Request
 deriving instance Typeable  Token
 
-newtype Conf = Conf { toMap :: Map String Dynamic }
+newtype Conf = Conf { toMap :: Map String Dynamic } deriving (Typeable)
 toConf :: [(String, Dynamic)] -> Conf
 toConf = Conf . fromList
 
