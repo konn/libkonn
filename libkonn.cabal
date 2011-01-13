@@ -11,13 +11,13 @@ Build-type:          Simple
 Cabal-version:       >=1.2
 Library
   hs-source-dirs:	src
-  Exposed-modules:     Data.ListLike.Comparison, Text.Mecab, Text.JSON.AttoJSON.Bson Data.Configuration, Network.OAuth.Http.BrowserClient
+  Exposed-modules:     Data.ListLike.Comparison, Text.Mecab, Text.JSON.AttoJSON.Bson Data.Configuration
   Build-depends:       ListLike >=1.0 && <2.0, base >=4.0 && <5, attoparsec >= 0.8 && <0.9
-                     , monad-loops >=0.3 && <0.4, process >= 1.0 && <2, HTTP >= 4000, syb >= 0.1
-                     , utf8-string >=0.3 && <0.4, bytestring >= 0.9 && <1.0, time >= 1.0 && <2, hoauth >= 0.3
-                     , AttoJson >= 0.4 && <1.0, containers >= 0.3 && <0.4
+                     , monad-loops >=0.3 && <0.4, process >= 1.0 && <2, syb >= 0.1
+                     , utf8-string >=0.3 && <0.4, bytestring >= 0.9 && <1.0, time >= 1.0 && <2, HTTP >= 4000
+                     , AttoJson >= 0.4 && <1.0, containers >= 0.3 && <0.4, hoauth
                      , compact-string-fix >= 0.3 && <0.4, bson >= 0.0 && <0.5
-                     , old-locale == 1.*, cgi, hoauth, split, mtl, network
+                     , old-locale == 1.*, split, mtl
   
   -- Modules not exported by this package.
   -- Other-modules:       
